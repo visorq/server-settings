@@ -11,7 +11,7 @@ supervisor_socket = "unix:///tmp/supervisor.sock"
 
 try:
     location = os.environ["LOCATION"]
-    if location not in ("DE", "IL", "AU", "NL"):
+    if location not in ("DE", "IL", "AU", "NL", "TEST"):
         raise KeyError
 except KeyError:
     print("Invalid LOCATION env value.")
